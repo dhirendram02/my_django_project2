@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <center>
+       <h1><u>SignIn :- </u></h1>
+       <form action="/signin" method="post">
+        {% csrf_token %}
+           <label for="">Username :-</label>
+           <input type="text" id="username" name="username" placeholder="Create a username (only letters and numbers): "Required>
+           <br>
+
+           <label for="">Password :-</label>
+           <input type="password" id="password" name="password" placeholder="Enter your Password "Required>
+           <br>
+
+           <label for="">Bank Name :-</label>
+           <input type="text" id="bankname" name="bankname" placeholder="Enter your Bank Name "Required>
+           <br>
+
+           <label for="">Account Number :-</label>
+           <input type="text" id=" accnumber" name="accnumber" placeholder="Enter your Account Number "Required>
+           <br>
+
+           <label for="">Account Holder Name :-</label>
+           <input type="text" id="accholdername" name="accholdername" placeholder="Enter your Account Holder Name "Required>
+           <br>
+
+           <label for="">Branch Of Bank :-</label>
+           <input type="text" id="branch_of_bank" name="branch_of_bank" placeholder="Enter Branch Of Your Bank "Required>
+           <br>
+           
+           <label for="">IFSC Code :-</label>
+           <input type="text" id="ifsc_code" name="ifsc_code" placeholder="Enter  Your  IFSC Code"Required>
+           <br>
+
+           <button type="submit"> Sign In </button>
+        </form>
+        
+        <script src="" async defer></script>
+    </centre>
+    </body>
+</html>
